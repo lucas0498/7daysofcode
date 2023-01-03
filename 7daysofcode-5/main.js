@@ -2,11 +2,11 @@ let hortifruti = [];
 let congelados = [];
 let laticinios = [];
 let doces = [];
-let pergunta = '';
+let adicionarMais = '';
 
-while(pergunta != 'não'){
-    pergunta = prompt('Deseja adicionar algo à sua lista de compras?(sim ou não)')
-    if (pergunta == 'sim'){
+while(adicionarMais != 'não'){
+    adicionarMais = prompt('Deseja adicionar algo à sua lista de compras?(sim ou não)')
+    if (adicionarMais == 'sim'){
     
         let produto = prompt('O que?')
         let categoria = prompt('Em qual categoria isso se encaixa? Responda 1 para HORTIFRUTI, 2 para CONGELADOS, 3 para LATICINIOS e 4 para DOCES')
@@ -26,7 +26,7 @@ while(pergunta != 'não'){
         alert('Categoria Inválida.')
     }
 
-}else if(pergunta == 'não'){
+}else if(adicionarMais == 'não'){
     alert(`Lista de compras: \n 
     Hortifruti: ${hortifruti} \n
     Congelados: ${congelados} \n
